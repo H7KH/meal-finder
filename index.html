@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Finder</title>
+    <link rel="icon" href="images/radish-iicon-fav.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__title--h1">Meal Finder</h1>
+
+      <div class="input-container">
+        <form class="input-container__search-bar" id="submit">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for meals and keywords"
+            autocomplete="off"
+          />
+          <button class="search-btn" type="submit">
+            <i
+              class="fa-solid fa-magnifying-glass fa-lg"
+              style="color: #17233a"
+            ></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="fa-solid fa-shuffle fa-lg" style="color: #ffffff"></i>
+        </button>
+      </div>
+
+      <div id="result-heading"></div>
+      <div id="meals" class="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/96a562f0a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
